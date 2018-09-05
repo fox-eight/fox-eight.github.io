@@ -1,471 +1,240 @@
 <!DOCTYPE html>
-<html lang="en" >
-
-<head>
-  <meta charset="UTF-8">
-  <title>ScrollMe</title>
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-  <script  src="js/index.js"></script>
-
-  
-  
-  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
-
-      <link rel="stylesheet" href="css/style.css">
+<html><head>
 
 <style>
-body{
-    background-repeat:repeat;
-	background-image: url("https://www.globalatlantic.com/sites/all/themes/ga_bootstrap/images/planning/hero-bg.jpg");
-	height: auto;
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
-  </style>
+
+body {
+  font-family: sans-serif;
+  background: #d7e0e5;
+  margin:0;
+}
+
+
+
+
+
+
+.column-left {
+
+    float: left;
+    width: 30%;
+    position: relative;
+    text-align: center;
+
+}
+
+.column-left img{
+  width:100%;
+  max-width: 300px;
+  padding: 15px;
+  text-align: center;
+}
+
+.column-right {
+
+    float: left;
+    width: 60%;
+    font-size: 34px;
+    line-height: 38px;
+    padding: 30px;
+    padding-top: 70px;
+    position: relative;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.wrapper{
+
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+background-color: #fff;
+padding: 40px;
+}
+
+.row {
+
+    background-color: #136aa2;
+    margin-top: 20px;
+    border-radius: 5px;
+    color:white;
+
+}
+
+span{
+  color: #21a0f0;
+  font-weight: 900;
+  font-size: 70px; 
+}
+
+h2{
+  font-weight: 900;
+  font-size: 40px;
+  color: #136aa2;
+}
+
+h1{
+  font-weight: 900;
+  font-size: 50px;
+  color: #fff;
+}
+
+p img{
+  width:90%;
+  max-width:500px;
+}
+
+
+
+.navi {
+
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    height: 65px;
+    z-index: 200000;
+    text-align: center;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    left: 0;
+    padding-top: 13px;
+
+}
+
+.header{
+ background-image: url("https://www.globalatlantic.com/preneed/sites/preneed/files/upload/images/gradient.png");
+ background-attachment: fixed;
+ color: white;
+ text-align: center;
+ left:0;
+ position: relative;
+ height: 300px;
+ padding-top:100px;
+
+}
+
+@media only screen and (max-width: 880px) {
+.column-right {
+
+
+    padding-top: 60px;
+
+
+}
+
+}
+
+
+@media only screen and (max-width: 720px) {
+.column-left {
+
+    float: none;
+    width: 100%;
+    position: relative;
+
+}
+
+.column-right {
+
+    float: none;
+    width: 100%;
+    font-size: 34px;
+    line-height: 38px;
+    padding-top: 20px;
+    position: relative;
+
+
+}
+}
+
+
+</style>
+
 </head>
+  
+  <title></title>
+<body>
 
 
+<div class="navi"><img src="https://www.globalatlantic.com/sites/default/files/upload/logo-global-atlantic.jpg"></div>
 
-  <body>
-  	<div class="navi"><img src="https://www.globalatlantic.com/sites/default/files/upload/logo-global-atlantic.jpg"></div>
 
-	<section id="scrollme" class="section section_intro scrollme">
+<div class="header"><h1>Employee Survey Dashboard</h1>
+<p>In July, we asked for your feedback to help keep making your company a great place to work. Here are some highlights. </p></div>
 
-		<div class="wrapper">
-
-			<h1
-				class="animateme"
-				data-when="exit"
-				data-from="0"
-				data-to="0.25"
-				data-opacity="0"
-				data-translatey="-250"
-				style="padding-bottom: 20px;"
-			>
-				Employee Engagement Pulse Survey Dashboard
-			</h1>
-			<h3
-				class="animateme"
-				data-when="exit"
-				data-from="0"
-				data-to="0.45"
-				data-opacity="0"
-				data-translatey="-150"
-				style="color: white;"
-			>
-				Last month, we asked for your feedback to help keep making your company a great place to work. Here are some highlights. 
-			</h3>
-
-			<div class="mouse_scroll">
-
-		<div class="mouse">
-			<div class="wheel"></div>
-		</div>
-		<div>
-			<span class="m_scroll_arrows unu"></span>
-			<span class="m_scroll_arrows doi"></span>
-		</div>
+ <div class="wrapper"> 
+<h2>Participation</h2>
+<div class="row" style="background-color: #d7e0e5; color: black;">
+<div class="column-left"><img src="88.png"></div>
+<div class="column-right">88% of you completed the survey! That's 13% higher than the average participation rate of 75%.</div>
 </div>
 
-		</div><!-- wrapper -->
+<h2>Our employee Net Promoter Score (eNPS)</h2>
+<h3>What is an eNPS?</h3>
+<p>An employee Net Promoter Score measures whether employees would recommend their company as a place to work. </p>
 
-	</section>
+<p><span style="float:left; padding-right:5px;">45</span><br><span style="font-size: 16px;">%</span> of GA employees gave a 9 or a 10 (with 10 being the highest score) indicating strong advocacy for Global Atlantic as an employer.</p><div style="clear: both;"></div> 
+<p><span style="float:left;padding-right:5px;">26</span><br>is our total eNPS - that's four points higher than the average eNPS of 22. </p><div style="clear: both;"></div> 
 
-	  	<div style="max-width: 1000px; background-color: white; width:95%; margin: 0 auto; position: relative;">
-	<section class="section">
+<h3>How is the eNPS calculated?</h3>
+(<span style="color: #4fdfa5; font-size:16px;">410 Promoters</span> - <span style="color: #ea3323;font-size:16px;">172 Detractors</span>) &#247; 914 total responses = <span style="color: #26a6f1;font-size:16px;">26 eNPS.</span><br><span style="color: #929292;font-size:14px;font-weight:300;">Note: 332 Passives disregarded.</span>
+<p>To get the eNPS, 'detractors' (those who responded with a 1-6 on the survey) are subtracted from 'promoters' (those who responded with 9-10) and that number is divided by the number of total responses. 'Passives' (those scoring a 7-8) are excluded from the calculation.<br><img src="enps.png"></p>
 
 
 
-		<div class="wrapper">
+<h2>Our key strengths</h2>
+<div class="row">
+<div class="column-left"><img src="87.png"></div>
+<div class="column-right">I am proud to work at Global Atlantic Financial Group.</div>
+</div>
 
+<div class="row">
+<div class="column-left"><img src="81.png"></div>
+<div class="column-right">I have great confidence in the future of Global Atlantic Financial Group.</div>
+</div>
 
+<div class="row">
+<div class="column-left"><img src="77.png"></div>
+<div class="column-right">My manager has the capability to help me succeed.</div>
+</div>
 
-			<div class="columns columns_content">
 
-				<div class="column column_large">
-				<h2 id="about">Participation</h2>
+<h2>Our key Opportunities</h2>
+<div class="row">
+<div class="column-left"><img src="68.png"></div>
+<div class="column-right">I am proud to work at Global Atlantic Financial Group.</div>
+</div>
 
-					<h3>Thank you to all who participated</h3>
+<div class="row">
+<div class="column-left"><img src="68.png"></div>
+<div class="column-right">I have great confidence in the future of Global Atlantic Financial Group.</div>
+</div>
 
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget metus ac sapien rutrum volutpat ac in purus. Nam facilisis nibh eu quam cursus pellentesque. In lobortis efficitur consequat. Integer sit amet tortor tellus. Phasellus fermentum nec nulla vitae pretium. Nunc a bibendum orci. Proin sit amet mauris purus.</p>
+<div class="row">
+<div class="column-left"><img src="57.png"></div>
+<div class="column-right">My manager has the capability to help me succeed.</div>
+</div>
 
-				</div><!-- column -->
 
 
-<pre
-	class="animateme scrollme"
-	data-when="enter"
-	data-from="0.75"
-	data-to="0"
-	data-opacity="0"
-	data-translatex="400"
->
-	
-<h2>87.86%</h2>
-<p>of you completed the survey.</p>
 
-</pre>
-
-
-				
-
-			</div><!-- columns -->
-			<div style="position: relative; padding-bottom: 30px; overflow: hidden; height: 50px;"><h4>87.86% completed</h4>
-					<ul class="effects plain clearfix scrollme" style="overflow: hidden;">
-						<li class="effect" style="height:50px; border: none; padding-bottom:10px;">
-
-							<div
-								class="effect_box effect_box_scale1 animateme"
-								data-when="view"
-								data-from="0.55"
-								data-to="0.05"
-								data-scalex="0"
-								data-translatex="-500"
-							></div>
-						</li>
-					</ul>
-					
-			</div>
-
-<div style="position: relative; padding-bottom: 30px; overflow: hidden; height: 50px;"><h4>1.46% not completed</h4>
-					<ul class="effects plain clearfix scrollme" style="overflow: hidden;">
-						<li class="effect" style="height:50px; border: none; padding-bottom:10px;">
-							
-							<div
-								class="effect_box effect_box_scale2 animateme"
-								data-when="view"
-								data-from="0.55"
-								data-to="0.05"
-								data-scalex="0"
-								data-translatex="-500"
-							></div>
-						</li>
-					</ul>
-					
-			</div>
-
-			<div style="position: relative; padding-bottom: 30px; overflow: hidden; height: 50px;"><h4>10.68% not started</h4>
-					<ul class="effects plain clearfix scrollme" style="overflow: hidden;">
-						<li class="effect" style="height:50px; border: none; padding-bottom:10px;">
-							
-							<div
-								class="effect_box effect_box_scale3 animateme"
-								data-when="view"
-								data-from="0.55"
-								data-to="0.05"
-								data-scalex="0"
-								data-translatex="-500"
-							></div>
-						</li>
-					</ul>
-					
-			</div>
-
-		</div><!-- wrapper -->
-
-	</section>
-
-	<hr>
-
-	<section class="section">
-
-		<div class="wrapper">
-
-
-
-			<div class="columns columns_content">
-
-				<div class="column column_large">
-								<h2 id="usage">Our employee Net Promoter Score (eNPS)</h2>
-
-					<h3>What is an eNPS?</h3>
-
-
-					<p>An employee Net Promoter Score measures whether employees would recommend their company as a place to work.</p>
-
-					<h3>How is the eNPS calculated?</h3>
-
-					<p>To get the eNPS, “detractors” (those who responded with a 1-6 on the survey) are subtracted from “promoters” (those who responded with 9-10) and that number is divided by the number of total responses. “Passives” (those scoring a 7-8) are excluded from the calculation. </p>
-<h3>Global Atlantic Results</h3>
-					<p><span style="line-height:26px;color:white;background:#3f9c35;border-radius:20px;padding-left: 7px;padding-right:10px;padding-top:3px; padding-bottom:2px;">410</span> Promoters<br><span style="line-height:26px;color:white;background:#f2ce44;border-radius:20px;padding-left: 7px;padding-right:10px;padding-top:3px; padding-bottom:2px;">332</span> Passives<br><span style="line-height:26px;color:white;background:#ff0100;border-radius:20px;padding-left: 7px;padding-right:10px;padding-top:3px; padding-bottom:2px;">172</span> Detractors</p>
-
-				</div><!-- column -->
-
-				<div class="column column_medium">
-
-<pre
-	class="animateme scrollme"
-	data-when="enter"
-	data-from="0.75"
-	data-to="0"
-	data-opacity="0"
-	data-translatex="400"
->
-	
-<h2>45%</h2>
-<p>of GA employees gave a<br>9 or a 10 (with 10 being the<br>highest score)indicating<br>strong advocacy for<Br>Global Atlantic as an employer.</p>
-
-</pre>
-
-<pre
-	class="animateme scrollme"
-	data-when="enter"
-	data-from="0.75"
-	data-to="0"
-	data-opacity="0"
-	data-translatex="400"
->
-	
-<h2>26</h2>
-<p>Is our total eNPS – that’s<br>four points higher than<bR>the average eNPS of 22.</p>
-
-</pre>
-
-				</div><!-- column -->
-
-			</div><!-- columns -->
-
-			
-
-			</div><!-- columns -->
-
-<div class="columns columns_content">
-	<div class="column column_xlarge">
-
-<br><br><Br><hr>
-			<h2 id="options">Three Areas of Strength</h2>
-
-			<p>Ranked one through five on a five point scale</p>
-
-			<dl
-				class="scrollme animateme"
-				data-when="enter"
-				data-from="0.5"
-				data-to="0"
-				data-crop="false"
-				data-opacity="0"
-				data-scale="1.5"
-				style ="color: white;"
-
-			>
-				<dd style="background-color: #3f9c35;">
-					<p><span style="color: white; font-weight: 900; font-size: 18px; background-color: #012942; padding: 5px; padding-left:10px; padding-top:7px; padding-right:10px; border-radius: 25px;">4.26</span>&nbsp;I am proud to work at Global Atlantic Financial Group</p>
-					
-				</dd>
-			</dl>
-
-			<dl
-				class="scrollme animateme"
-				data-when="enter"
-				data-from="0.5"
-				data-to="0"
-				data-crop="false"
-				data-opacity="0"
-				data-scale="1.5"
-				style ="color: white;"
-			>
-				<dd>
-					<p><span style="color: white; font-weight: 900; font-size: 18px; background-color: #012942; padding: 5px; padding-left:10px; padding-top:7px; padding-right:10px; border-radius: 25px;">4.12</span>&nbsp;I have great confidence in the future of Global Atlantic Financial Group.</p>
-				</dd>
-			</dl>
-
-			<dl
-				class="scrollme animateme"
-				data-when="enter"
-				data-from="0.5"
-				data-to="0"
-				data-crop="false"
-				data-opacity="0"
-				data-scale="1.5"
-				style ="color: white;"
-			>
-
-				<dd>
-					<p><span style="color: white; font-weight: 900; font-size: 18px; background-color: #012942; padding: 5px; padding-left:10px; padding-top:7px; padding-right:10px; border-radius: 25px;">4.02</span>&nbsp;I see Global Atlantic Financial Group’s values in action in the business. </p>
-					
-				</dd>
-			</dl>
-
-</div></div>
-
-
-
-<div class="columns columns_content">
-	<div class="column column_xlarge">
-		<br><br><Br><hr>
-			<h2 id="options">Three Areas of Opportunity</h2>
-
-			<p>Ranked one through five on a five point scale</p>
-
-			<dl
-				class="scrollme animateme"
-				data-when="enter"
-				data-from="0.5"
-				data-to="0"
-				data-crop="false"
-				data-opacity="0"
-				data-scale="1.5"
-			 	style ="background-color: #a6dd9f;">
-				<dd>
-					<p><span style="color: white; font-weight: 900; font-size: 18px; background-color: #012942; padding: 5px; padding-left:10px; padding-top:7px; padding-right:10px; border-radius: 25px;">3.68</span>&nbsp;Different teams work effectively with one another to achieve Global Atlantic Financial Group’s goals. </p>
-					
-				</dd>
-			</dl>
-
-			<dl
-				class="scrollme animateme"
-				data-when="enter"
-				data-from="0.5"
-				data-to="0"
-				data-crop="false"
-				data-opacity="0"
-				data-scale="1.5"
-				style ="background-color: #a6dd9f;"
-			>
-				<dd>
-					<p><span style="color: white; font-weight: 900; font-size: 18px; background-color: #012942; padding: 5px; padding-left:10px; padding-top:7px; padding-right:10px; border-radius: 25px;">3.68</span>&nbsp;I am able to maintain a healthy balance between my work and personal life. </p>
-				</dd>
-			</dl>
-
-			<dl
-				class="scrollme animateme"
-				data-when="enter"
-				data-from="0.5"
-				data-to="0"
-				data-crop="false"
-				data-opacity="0"
-				data-scale="1.5"
-				style ="background-color: #f3cf45;"
-			>
-
-				<dd>
-					<p><span style="color: white; font-weight: 900; font-size: 18px; background-color: #012942; padding: 5px; padding-left:10px; padding-top:7px; padding-right:10px; border-radius: 25px;">3.46</span>&nbsp;At Global Atlantic Financial Group, we communicate well with one another. </p>
-					
-				</dd>
-			</dl>
-
-
-</div></div>
-		</div><!-- wrapper -->
-
-
-	</section>
 
 
 </div>
-
-	<footer class="footer scrollme">
-
-		<div
-			class="footer_block animateme"
-			data-when="enter"
-			data-from="1"
-			data-to="0"
-			data-rotatex="90"
-			style="background-color: #012942;"
-		>
-
-			<div class="wrapper">
-
-				<h2 style="color: white;">Thank you!</h2>
-
-
-
-				<p style="color: white; font-weight: 300; line-height: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi enim lectus, varius vitae orci tincidunt, tristique feugiat lorem. Donec vehicula ligula sed odio gravida, eget sagittis lectus commodo. Nullam at lacus ac massa lacinia porta. Maecenas consectetur ipsum velit, non venenatis felis ultricies in. Ut tincidunt quis nulla eu pellentesque. Phasellus nisl dolor, rutrum quis posuere eget, egestas non lectus. Sed id ligula eu felis congue gravida. Aliquam fermentum erat eget magna convallis faucibus.</p>
-
-			</div><!-- wrapper -->
-
-		</div>
-
-	</footer>
-
-	<script>
-
-		/*!
-		* FitText.js 1.1
-		*
-		* Copyright 2011, Dave Rupert http://daverupert.com
-		* Released under the WTFPL license
-		* http://sam.zoy.org/wtfpl/
-		*
-		* Date: Thu May 05 14:23:00 2011 -0600
-		*/
-
-		(function( $ ){
-
-			$.fn.fitText = function( kompressor, options ) {
-
-				// Setup options
-				var compressor = kompressor || 1,
-				settings = $.extend({
-					'minFontSize' : Number.NEGATIVE_INFINITY,
-					'maxFontSize' : Number.POSITIVE_INFINITY
-					}, options);
-
-				return this.each(function(){
-
-					// Store the object
-					var $this = $(this);
-
-					// Resizer() resizes items based on the object width divided by the compressor * 10
-					var resizer = function () {
-						$this.css('font-size', Math.max(Math.min($this.width() / (compressor*10), parseFloat(settings.maxFontSize)), parseFloat(settings.minFontSize)));
-					};
-
-					// Call once to set.
-					setTimeout( function(){ resizer(); } , 250 );
-
-					// Call on resize. Opera debounces their resize by default.
-					$(window).on('resize.fittext orientationchange.fittext', resizer);
-
-				});
-
-			};
-
-		})( jQuery );
-
-		// --------------------------------------------------
-		// FitText init + animate to hash
-
-		$( document ).ready( function()
-		{
-			// Set FitText for main heading
-
-			$( '.fittext' ).fitText( 0.45 );
-
-			// Scroll to hash animation
-
-			$( function()
-			{
-				$( 'a[href*=#]:not([href=#])' ).click( function()
-				{
-					if( location.pathname.replace( /^\// , '' ) == this.pathname.replace( /^\// , '' ) && location.hostname == this.hostname )
-					{
-						var target = $( this.hash );
-						target = target.length ? target : $( '[name='+this.hash.slice( 1 )+']' );
-						if( target.length )
-						{
-							$( 'html,body' ).stop().animate(
-							{
-								scrollTop:target.offset().top - 120
-							} , 1000 );
-							return false;
-						}
-					}
-				});
-			});
-
-		});
-
-		// --------------------------------------------------
-
-	</script>
-
-
-
-
-
-
-
+<br><br><br><br>
 
 </body>
-
 </html>
